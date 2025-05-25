@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="  font-bold lg:left-30 shadow-md p-3 flex justify-between items-center bg-white lg:rounded-full max-w-6xl w-full lg:my-5 absolute z-10 mx-auto">
+    <nav className="  font-bold lg:left-30 shadow-md flex justify-between items-center bg-white lg:rounded-full max-w-6xl w-full lg:my-5 absolute z-10 mx-auto">
       <div className="text-xl px-2 font-bold ">
         <h1>etail.me</h1>
       </div>
@@ -12,10 +12,12 @@ const Navbar = () => {
         <Link to="/" className="hover:text-gray-200 text-sm lg:p-5">Fetures</Link>
         <Link to="/" className="hover:text-gray-200 text-sm lg:p-5">Pricing</Link>
       </div>
-      <div className=" hidden lg:flex gap-8 text-sm">
-        <Link to="/" className="hover:text-gray-200">Login</Link>
-        <button>
-        <Link to="/" className="hover:text-gray-200 text-white bg-black rounded-xl p-1">Start selling</Link>
+      <div className=" hidden lg:flex gap-4 text-sm mx-2">
+        <button   className="bg-gray-200 rounded-full px-4 "> 
+        <Link to="/">Login</Link>
+        </button>
+        <button  className="hover:text-gray-200 text-white bg-black rounded-full p-1">
+        <Link to="/">Start selling</Link>
         </button>
       </div>
 
